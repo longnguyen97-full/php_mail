@@ -1,0 +1,79 @@
+Task 1
+# Chủ đề: Xây dựng một trang web PHP thuần sử dụng MVC và OOP
+
+# Yêu cầu:
+- Xây dựng một trang web PHP thuần sử dụng MVC và OOP có cấu trúc như sau
+```
+    ./training_mvc/
+        |-- assets/
+            |-- fonts/
+            |-- images/
+            |-- javascripts/
+            |-- stylesheets/
+        |-- controllers/
+        |-- models/
+        |-- views/
+            |-- layouts/
+                |-- application.php
+        |-- connection.php
+        |-- index.php
+        |-- routes.php
+```
+
+- Giải thích về cấu trúc thư mục trên:
+    - Thư mục training_mvc là thư mục chứa project.
+    - Thư mục controlers chứa các file định nghĩa các lớp controller, có các hàm trong đó tương tác với model và gọi ra view để trả về cho người dùng.
+    - Thư mục models chứa các file định nghĩa các lớp model, chịu trách nhiệm thao tác với CSDL.
+    - Thư mục views chứa thư mục layouts chứa template hiển thị chung của trang web trong file application.php
+    - index.php File này sẽ là file nhận mọi yêu cầu truy vấn lên server. Bởi vậy, mọi đường dẫn truy cập đều phải có dạng /?param=value hoặc /index.php?param=value
+    - connection.php được dùng để kết nối và truy vấn đến cơ sở dữ liệu, sử dụng PDO
+    - routes.php sẽ chịu trách nhiệm phân tích các biến mà chúng ta lấy được ở file index.php trên sau đó xác định phần view nào sẽ được hiển thị
+
+- Các chức năng của trang web
+    - Màn hình Admin
+    - Đăng nhập màn hình admin
+
+    - Màn hình quản lý admin (thêm, xóa, sửa)
+    - Màn hình quản lý user (thêm, xoá, sửa) có upload hình đại diện
+    - Màn hình quản lý blog (thêm, xóa, sửa)
+
+    - Màn hình user
+    - Hiển thị các bài viết trong đang trong thời gian public
+    - Màn hình login user
+    - Màn hình chỉnh sửa profile
+
+===========================================
+Task 2
+# Chủ đề: PHP thuần: xử lý chuỗi
+
+# Yêu cầu:
+1) Tạo ra 150 file html với nội dung nằm trong file content.txt, trong mõi file html có nội dung tối đa 10 đoạn văn (paragraph) và được lấy ngẫu nhiên theo từng đoạn văn, mõi đoạn văn được bao trong thẻ p. Mẫu html nằm ở file template.html.
+
+2) Chèn vào đoạn văn thứ 2 cứ 2 ký tự tiếng nhật là 1 ký tự tiếng anh ngẫu nhiên vào 150 file html ở trên.
+    Cho biết số lượng ký tự tiếng nhật và số lượng ký tự có trong đoạn văn thứ 2 ở mõi file html.
+
+Chú ý: File template.html là để em hình dung kết quả của 1 file html nó như thế nào.
+Em bỏ phần nội dung trong thẻ body rồi thay thế bằng đoạn văn mà em đã trích xuất ra.
+Hạn nộp 4 giờ
+
+===========================================
+Task 3
+# Chủ đề: PHP thuần: xử lý mảng
+
+# Yêu cầu:
+Cho trước danh sách dữ liệu được lưu ở biến $args, chúng tôi cần 1 menu thể hiện sự phân cấp như kết quả ở bên dưới.
+Có thể phát triễn hoặc thay đổi biến $args nhưng hãy giữ lại đúng thứ tự id trong biến $args.
+```
+$args = [
+    ['id'=>1,'name'=>'Category 1'],
+    ['id'=>2,'name'=>'Category 2'],
+    ['id'=>3,'name'=>'Category 3'],
+    ['id'=>4,'name'=>'Category 4'],
+    ['id'=>5,'name'=>'Category 5'],
+    ['id'=>6,'name'=>'Category 6'],
+    ['id'=>7,'name'=>'Category 7'],
+    ['id'=>8,'name'=>'Category 8'],
+    ['id'=>9,'name'=>'Category 9'],
+    ['id'=>10,'name'=>'Category 10'],
+];
+```
